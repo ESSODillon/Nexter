@@ -7,7 +7,19 @@
   &__content {
     background-color: $color-grey-light-1;
     grid-column: col-start 5 / full-end;
-    padding: 6rem 12rem;
+
+    padding: 6rem 10vw;
+
+    // The flexbox way of organizing the content
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    // // The CSS Grid method of organizing the content
+    // display: grid;
+    // align-content: center;
+    // justify-items: start;
   }
 
   &__text {
